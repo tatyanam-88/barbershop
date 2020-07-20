@@ -1,0 +1,103 @@
+.record__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-align: left;
+}
+
+.record__item {   
+    padding-left: 11px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+
+    border: 2px solid #e5ddd5;
+    background-color: #ffffff;
+    width: 265px;   
+}
+
+.record__item--patronymic,
+.record__item--email {
+    margin-bottom: 30px;
+}
+
+.record__item--textarea {
+    margin-bottom: 40px;
+}
+
+.record__field {
+    border: none;   
+    font-size: 18px;
+    line-height: 30px;      
+}
+
+.record__field:-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+.record__field::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+    font-family: "PT Sans Narrow";
+}
+
+.record__choice,
+.record__optional {
+    padding: 0;
+    margin: 0;
+
+    border: none;
+}
+
+.record__optional {
+    margin-bottom: 40px;
+}
+
+.record__title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.record__list--choice {
+    margin-bottom: 45px;
+}
+
+.record__item--choice,
+.record__item--optional {
+    border: none;
+    background-color: #f8f5f2;
+}
+
+.record__label {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.record__label--nameservice {
+    font-size: 18px;
+    line-height: 30px;   
+}
+
+.record__submit {
+    padding-left:0;
+    padding-right:0;
+    background-color: #826550;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    width: 280px;
+}
+
+
+
+
+

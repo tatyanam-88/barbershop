@@ -1,0 +1,75 @@
+.stats__header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    background-color: #ffffff;    
+}
+
+.stats__slogan {
+    margin: 0;
+    margin-bottom: 28px;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;  
+}
+
+.stats__intro {
+    font-size: 20px;
+    line-height: 27px;
+
+    margin: 0;    
+}
+
+.stats__list { 
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    color: #ffffff;
+    border-collapse: collapse;    
+    text-align: left;
+    
+    width: 100%;
+}
+
+.stats__row--first,
+.stats__row--fourth {    
+    background-color: #404040;   
+}
+
+.stats__row--second {
+    background-color: #4e4e4e;
+}
+
+.stats__row--third {
+    background-color: #353535;
+} 
+
+.stats__value,
+.stats__field {   
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.stats__value {
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 700;
+
+    padding-left: 20px;
+}
+
+.stats__field {
+    color: #f7f4f1;
+    text-align: right;
+
+    font-size: 18px;
+    line-height: 18px;
+
+    padding-right: 20px;
+}
+
+

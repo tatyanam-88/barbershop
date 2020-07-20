@@ -1,0 +1,42 @@
+.advantages {
+    background-color: #242424;
+    color: #f7f4f1;
+
+    padding-top: 10px;
+}
+
+.advantages__wrapper {
+    margin: 0 auto;
+    width: 280px;
+}
+
+.advantages__legend {
+    font-size: 20px;
+    line-height: 27px;
+    color: #7f7f7f;
+}
+
+.advantages__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.advantages__title {
+    margin: 0;   
+    margin-bottom: 25px;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;    
+}
+
+.advantages__description {
+    margin: 0;
+    margin-bottom: 35px;
+
+    font-size: 20px;
+    line-height: 27px;
+}
+

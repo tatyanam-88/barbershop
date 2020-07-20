@@ -1,0 +1,44 @@
+.price {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;   
+
+    background-color: #353535;
+    color: #ffffff;   
+}
+
+.price__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.price__list {
+    margin: 0 auto;    
+
+   text-align: left;
+   border-spacing: 6px 15px;
+
+   border-bottom: 1px solid #484848;
+}
+
+.price__row {
+    vertical-align: top;
+}
+
+.price__service,
+.price__cost {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.price__cost {
+    padding: 0;
+}
+
+.price__view {
+    font-weight: 700;
+}
