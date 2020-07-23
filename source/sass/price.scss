@@ -1,7 +1,5 @@
 .price {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;   
+    padding-top: 30px;    
 
     background-color: #353535;
     color: #ffffff;   
@@ -14,6 +12,7 @@
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .price__list {
@@ -29,16 +28,121 @@
     vertical-align: top;
 }
 
+.price__number {
+    display: none;
+}
+
 .price__service,
-.price__cost {
+.price__cost,
+.price__serv,
+.price__wash {
     font-size: 20px;
     line-height: 27px;
 }
 
 .price__cost {
     padding: 0;
+    text-align: right;
 }
 
-.price__view {
+.price__service {
     font-weight: 700;
+}
+
+.price__serv {
+    margin: 0;
+
+    font-weight: normal;
+}
+
+.price__wash{
+    display: none;
+}
+
+@media (min-width:$tablet) {
+    .price {
+        margin: 0 auto;
+        width: 640px;
+    }
+
+    .price__title {
+        text-align: left;
+    }   
+
+    .price__list {
+        margin: 0;
+        border: 1px solid #4a4a4a;
+        border-collapse: collapse;
+
+        td {
+            border: 1px solid #4a4a4a;
+        }
+    }
+    
+    .price__number {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        display: block;
+
+        font-size: 20px;
+        line-height: 27px;
+        color:#868686;
+    }
+
+    .price__service {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        width: 228px;
+    }
+
+    .price__serv {
+        display: none;
+    }
+
+    .price__wash {       
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        width: 160px;
+
+        display: block;
+        text-align: center;
+    }
+
+    .price__cost {
+
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; 
+        
+        width: 148px;       
+        text-align: left;        
+    }
+}
+
+@media (min-width:$desktop) {
+    .price,
+    .price__title {
+        width: 960px;
+    }
+
+    .price {
+        padding: 0;
+    }
+
+    .price__title {
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 }

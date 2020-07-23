@@ -1,7 +1,136 @@
+.social {      
+    border-top: 2px solid #3e3e3e;
+    border-bottom: 2px solid #3e3e3e;
+}
+
+.social__wrapper {
+    margin: 0 auto;
+    width: 280px;
+}
+
+.social__title {
+    display: none;
+}
+
 .social__list {
     margin: 0;
-    padding: 0;  
-    margin-bottom: 30px;
+    padding: 0;     
 
     list-style: none;
+    display: flex;
+}
+
+.social__item {
+    padding-left: 38px;
+    padding-right: 40px;
+    padding-top: 30px;
+    
+
+    &:not(:last-child) {
+        border-right: 2px solid #3e3e3e;
+    }   
+}
+
+.social__link--vkontakte {
+    background-image: url(../img/vk-big.png);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 26px;
+    display: block;    
+}
+
+.social__link--facebook {
+    background-image: url(../img/fb-big.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 39px;
+    display: block;
+}
+
+.social__link--instagram {  
+    padding-bottom: 30px;
+    
+    background-image: url(../img/ig-big.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+@media (min-width:$tablet) {
+    .social {
+        border: none;
+    }
+
+    .social__wrapper {
+        width: 640px;
+
+        border: 2px solid #3e3e3e;
+    }    
+
+    .social__item {
+        padding: 0;
+        padding-top: 35px;
+        
+        width: 214px;
+    }
+
+    .social__link {
+        margin: 0 auto;
+
+        text-align: center;
+    }
+    
+}
+
+@media (min-width:$desktop) {   
+
+    .social__wrapper {      
+        display: block;
+        border: none;
+
+        width: 280px;
+    }
+
+    .social__title {
+        margin-bottom: 10px;
+
+        display: block;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: normal;
+
+        text-align: center;
+    }
+
+    .social__list {
+        justify-content: center;
+    }
+
+    .social__item {
+        margin-right: 10px;
+        padding: 15px;
+        border: 2px solid #3e3e3e;
+        width: 20px;
+        height: 20px;
+    }
+
+    .social__link--vkontakte {
+        background-image: url(../img/vk-small.png);      
+        width: 15px;
+        height: 17px;          
+    }
+
+    .social__link--facebook {
+        background-image: url(../img/fb-small.png);        
+        width: 10px;
+        height: 21px;        
+    }
+    
+    .social__link--instagram {          
+        background-image: url(../img/ig-small.png);       
+        width: 19px;
+        height: 19px;
+       
+    }
 }

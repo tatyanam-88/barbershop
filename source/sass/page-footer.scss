@@ -8,3 +8,30 @@
     margin: 0 auto;
     width: 280px;
 }
+
+.page-footer__social {
+    margin-bottom: 30px;
+}
+
+@media (min-width:$tablet) {    
+    .page-footer__wrapper {
+        width: 640px;
+
+        text-align: left;              
+    }      
+}
+
+@media (min-width:$desktop) {  
+    .page-footer__container {
+        margin: 0 auto;
+        display: flex;
+        width: 960px;   
+        justify-content: space-between;     
+    }       
+
+    .page-footer__wrapper {
+        margin: 0;
+
+        width: 320px;      
+    }
+}

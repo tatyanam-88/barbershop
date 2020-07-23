@@ -1,6 +1,6 @@
 .button {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 88px;
     padding-right: 88px;
 
@@ -8,4 +8,16 @@
     color: #000000;
     font-weight: bold;
     text-transform: uppercase; 
+}
+
+@media (min-width:$tablet) {
+    .button {
+        padding-left: 28px;
+        padding-right: 28px;
+
+        &.reviews__write {
+        padding-left: 0;
+        padding-right: 0;
+        }
+    }
 }
