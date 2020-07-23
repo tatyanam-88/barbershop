@@ -5,6 +5,7 @@
 .copyright__text {
     margin: 0;
     margin-bottom: 15px;
+
     font-size: 18px;
     line-height: 27px;
     font-weight: normal;
@@ -23,4 +24,32 @@
     font-weight: 700;
 
     border: 2px solid #3e3e3e;
+
+    display: inline-block;
 }
+
+@media (min-width:$tablet) {
+    .copyright {
+       margin-top: -245px;  
+       margin-left: 470px;  
+       margin-bottom: 180px;    
+    }
+
+    .copyright__link {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        text-transform: uppercase;      
+    }
+}
+
+@media (min-width:$desktop) {
+    .copyright {
+      margin: 0; 
+
+      display: block;
+      width: 180px;
+
+    }    
+}
+

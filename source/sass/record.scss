@@ -52,12 +52,16 @@
 }
 
 .record__optional {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    .record__title {
+        margin-bottom: 28px;
+    }
 }
 
 .record__title {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 
     font-size: 20px;
     line-height: 27px;
@@ -67,6 +71,22 @@
 
 .record__list--choice {
     margin-bottom: 45px;
+
+    display: flex;
+    flex-wrap: wrap;      
+}
+
+.record__item--choice {
+    padding: 0;
+    margin-bottom: 90px;
+    margin-right: 18px;
+
+    width: 75px;   
+    
+    &:nth-child(4),
+    &:nth-child(5) {
+        margin-bottom: 0;
+    }
 }
 
 .record__item--choice,
@@ -76,18 +96,83 @@
 }
 
 .record__label {
+    margin-bottom: 15px;
     font-size: 18px;
     line-height: 24px;
+
+    position: relative;
+    display: inline-block;
+}
+
+.record__label .record__radio + .record__radio--indicator {    
+        border: 2px solid #e5ddd5;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: block;
+        
+        position: absolute;
+        top: -63px;
+}
+
+.record__label .record__radio:checked + .record__radio--indicator::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #e5ddd5;
+
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.record__item--optional {
+    padding: 0;
+    margin: 0;   
+    padding-left: 60px;
+    margin-bottom: 10px;
+}
+
+.record__checkbox  + .record__checkbox--indicator {    
+    border: 2px solid #e5ddd5;
+    width: 36px;
+    height: 36px;   
+    background-color: #ffffff;
+    display: block;
+    
+    position: absolute;
+    top: -5px;    
+    left: -60px;
+}
+
+.record__label--nameservice .record__checkbox:checked + .record__checkbox--indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 7px;
+
+    width: 20px;
+    height: 8px;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000; 
+}
+
+.record__label--nameservice .record__checkbox:checked + .record__checkbox--indicator::after {
+    transform: rotate(-45deg);
 }
 
 .record__label--nameservice {
     font-size: 18px;
-    line-height: 30px;   
+    line-height: 30px;    
 }
 
 .record__submit {
     padding-left:0;
     padding-right:0;
+    margin-bottom: 30px;
     background-color: #826550;
     color: #ffffff;
     font-family: inherit;
@@ -96,6 +181,138 @@
     border: none;
     width: 280px;
 }
+
+@media (min-width: $tablet) {
+    .record__list {
+        margin-bottom: 20px;
+
+        display: flex;
+        flex-wrap: wrap;       
+    }
+
+    .record__item {
+        margin: 0;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 199px;
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6){
+            width: 640px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-right: none;
+        }        
+
+        &.record__item--choice {
+            margin: 0;       
+            width: 95px;       
+        }
+
+        &.record__item--optional {
+            margin: 0;
+            width: 250px;
+        }
+    }    
+
+    .record__item--textarea {
+        min-height: 210px;
+    }
+
+    .record__title {
+        margin-bottom: 80px;
+    }
+
+    .record__list--choice {
+        flex-wrap: nowrap; 
+        justify-content: space-around;
+        text-align: center;
+
+        width: 640px;       
+    }
+    
+    .record__list--optional {
+        width: 640px;
+        margin: 0 auto; 
+        
+        justify-content: space-between;
+    }
+    
+    .record__submit {
+        width: 640px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .record__choice {
+        margin-bottom: 30px;
+    }
+
+    .record__list {
+        justify-content: space-between;       
+    }
+
+    .record__item {
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3) {
+            width: 290px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-right: 2px solid #e5ddd5;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5) {
+            width: 460px;
+        }
+
+        &:nth-child(6) {
+            width: 960px;
+        }
+    } 
+
+    .record__list--choice {
+        width: 960px;
+    }
+
+    .record__item.record__item--choice {     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-right: none;           
+        }        
+    }
+
+    .record__list--optional {
+        width: 960px;        
+    }
+
+    .record__item.record__item--optional {
+        width: 250px;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-right: none;           
+        }          
+    }
+
+    .record__submit {
+        width: 960px;
+    }
+}
+
+    
 
 
 

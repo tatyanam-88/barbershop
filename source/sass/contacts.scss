@@ -1,5 +1,5 @@
 .contacts__title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     font-size: 18px;
     line-height: 27px;
@@ -12,6 +12,12 @@
     
     font-size: 18px;
     line-height: 27px;
+}
+
+.contacts__address {
+    margin-bottom: 20px;
+
+    display: block;
 }
 
 .contacts__phone {
@@ -29,3 +35,41 @@
     line-height: 27px;
     border: 2px solid #3e3e3e;    
 }
+
+.contacts__phone-mobile {
+    display: none;
+}
+
+@media (min-width:$tablet) {
+    .contacts__title {
+        text-transform: uppercase;
+    }
+
+    .contacts__address {
+        margin: 0;
+    }
+
+    .contacts__phone {
+        padding: 0;
+
+        border: none;
+        font-weight: normal;
+    }
+
+    .contacts__phone-mobile {
+        display: inline-block;
+    }
+}
+
+@media (min-width:$desktop) {
+    .contacts {
+       width: 340px;
+    }
+
+    .contacts__title {
+        margin-top: 0;
+    }
+}
+
+
+

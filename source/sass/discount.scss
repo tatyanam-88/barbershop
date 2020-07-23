@@ -1,8 +1,6 @@
 .discount {
     padding-top: 15px;
-    padding-bottom: 15px;   
-    padding-left: 20px;
-    padding-right: 20px;  
+    padding-bottom: 15px;        
 
     background-color: #353535;
     color: #ffffff;     
@@ -12,7 +10,7 @@
     margin: 0 auto;
 
     width: 280px;    
-    border-bottom: 1px solid #484848;
+    border-bottom: 1px solid #484848;  
 }
 
 .discount__time {
@@ -23,3 +21,44 @@
     font-size: 20px;
     line-height: 27px;    
 }
+
+@media (min-width:$tablet) {
+    .discount__text { 
+        padding-top: 30px;
+        padding-bottom: 30px;       
+
+        width: 640px;
+
+        text-transform: uppercase;
+        font-weight: 700;
+        border: 1px solid #484848;
+    }
+
+    .discount__time {
+        padding: 0;
+        padding-left: 180px;
+    }
+}
+
+@media (min-width:$desktop) {
+    .discount {
+        padding:  0;  
+        
+        border: 1px solid #484848;
+    }
+
+    .discount__text {
+        padding: 0;  
+          
+        width: 270px;        
+
+        text-transform: none;    
+        font-weight: 400;   
+        border: none; 
+    }
+
+    .discount__time {
+        padding: 0;          
+    }
+}
+
