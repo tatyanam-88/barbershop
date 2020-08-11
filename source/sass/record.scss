@@ -12,7 +12,7 @@
     padding-bottom: 15px;
     margin-bottom: 5px;
 
-    border: 2px solid #e5ddd5;
+    border: 1px solid #e5ddd5;
     background-color: #ffffff;
     width: 265px;   
 }
@@ -105,7 +105,7 @@
 }
 
 .record__label .record__radio + .record__radio--indicator {    
-        border: 2px solid #e5ddd5;
+        border: 1px solid #e5ddd5;
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -122,7 +122,7 @@
     width: 17px;
     height: 17px;
     border-radius: 50%;
-    border: 2px solid #e5ddd5;
+    border: 1px solid #e5ddd5;
 
     position: absolute;
     left: 14px;
@@ -137,7 +137,7 @@
 }
 
 .record__checkbox  + .record__checkbox--indicator {    
-    border: 2px solid #e5ddd5;
+    border: 1px solid #e5ddd5;
     width: 36px;
     height: 36px;   
     background-color: #ffffff;
@@ -183,6 +183,10 @@
 }
 
 @media (min-width: $tablet) {
+    .record {
+       padding-bottom: 70px;
+    }
+
     .record__list {
         margin-bottom: 20px;
 
@@ -219,12 +223,28 @@
         }
     }    
 
+    .record__field {
+        font-size: 24px;
+    }
+
+    .record__label {
+        font-size: 24px;
+    }
+
+    .record__label--nameservice {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
     .record__item--textarea {
         min-height: 210px;
     }
 
     .record__title {
         margin-bottom: 80px;
+
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .record__list--choice {
@@ -244,6 +264,10 @@
     
     .record__submit {
         width: 640px;
+        margin-bottom: 0;
+
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 
@@ -265,7 +289,7 @@
 
         &:nth-child(1),
         &:nth-child(2) {
-            border-right: 2px solid #e5ddd5;
+            border-right: 1px solid #e5ddd5;
         }
 
         &:nth-child(4),

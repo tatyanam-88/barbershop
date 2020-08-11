@@ -15,18 +15,18 @@
             <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
                 alt="Барбершоп Бородинский">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
-                <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                        <a>Главная</a>
+                    <li class="site-list__item">
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="site-list__item">
                         <a href="photo.html">Наши работы</a>
                     </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Записаться</a>
+                    <li class="site-list__item site-list__item--active">
+                        <a>Записаться</a>
                     </li>
                     <li class="site-list__item">
                         <a href="#">Контакты</a>
@@ -37,14 +37,23 @@
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
-                        <a class="user-list__login" href="login.html">Войти</a>
+                        <a class="user-list__login" href="login.html">
+                            Войти
+                            <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 16 16">
+                                <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
+                                <polygon
+                                    points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="page-main">
-        <div class="page-main__wrapper">
+
+    <main class="page-main page-main__mod">
+        <div class="page-main__wrapper page-main__wrapper--mod">
             <div class="page-main__container">
                 <h1 class="page-main__title">Запись на стрижку</h1>
                 <a class="page-main__major button" href="index.html">На главную</a>
@@ -200,7 +209,7 @@
         </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__cont">
         <div class="page-footer__container">
             <div class="page-footer__wrapper">
                 <div class="page-footer__contacts contacts">
@@ -243,6 +252,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

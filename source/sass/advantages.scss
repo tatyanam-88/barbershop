@@ -1,15 +1,26 @@
 .advantages {
-    background-color: #242424;
-    color: #f7f4f1;
+    background-color: #242424;    
+    text-align: center;    
+    position: relative;
 
-    padding-top: 55px;
-    margin-top: -40px;
-    text-align: center;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 34px;
+        display: block;
+
+        background-image: url(../img/triangle.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+    }
 }
 
 .advantages__wrapper {
     margin: 0 auto;
+    padding-top: 170px;
+
     width: 280px;
+    position: relative;
 }
 
 .advantages__legend {
@@ -23,6 +34,26 @@
     padding: 0;
 
     list-style: none;
+    color: #f7f4f1;
+}
+
+.advantages__item--cool,
+.advantages__item--price {
+    display: none;
+}
+
+.advantages__item--fast::before {
+    content: "";
+
+    background-image: url(../img/scissors.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 95px;
+    height: 94px;
+
+    position: absolute;
+    top: 10%;
+    left: 32%;
 }
 
 .advantages__title {
@@ -42,6 +73,10 @@
     line-height: 27px;
 }
 
+.advantages__toggles {
+    margin: 0;
+}
+
 @media (min-width: $tablet) {
     .advantages {
         margin: 0;       
@@ -50,13 +85,74 @@
     }
 
     .advantages__wrapper {
+        padding-top: 0;
+        margin-bottom: 40px;
+
         width: 640px;
-    }
+    }    
 
     .advantages__list {
-        padding-left: 160px;
+       padding: 0;
 
         text-align: left;
+    }
+
+    .advantages__item {
+        padding-left: 130px;
+        margin-top: 45px;
+        width: 448px;
+
+        display: flex;
+        flex-direction: column;
+        position: relative; 
+        
+        border-bottom: 1px solid #4a4a4a;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .advantages__item--fast::before {
+        left: 0;
+        top: 0;
+    }
+
+    .advantages__item--cool,
+    .advantages__item--price {
+        display: block;
+    }
+
+    .advantages__item--cool::before {
+        content: "";
+
+        background-image: url(../img/chair.png);
+        background-repeat: no-repeat;
+        display: block;
+        width: 95px;
+        height: 88px;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .advantages__item--price::before {
+        content: "";
+
+        background-image: url(../img/price.png);
+        background-repeat: no-repeat;
+        display: block;
+        width: 95px;
+        height: 91px;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .advantages__title {
+        margin-bottom: 15px;
     }
 
     .advantages__toggles {
@@ -77,19 +173,35 @@
     }    
 
     .advantages__item {
+        padding-left: 0;
+        padding-top: 120px;
         text-align: center;
+
+        border-bottom: none;
     }
 
     .advantages__item--fast {
         width: 25%;
+
+        &::before {
+            left: 30%;
+        }
     }
 
     .advantages__item--cool {
         width: 21%;
+
+        &::before {
+            left: 30%;
+        }
     }
 
     .advantages__item--price {
         width: 27%;
+
+        &::before {
+            left: 30%;
+        }
     }
 }
 

@@ -3,29 +3,51 @@
     padding-bottom: 15px;        
 
     background-color: #353535;
-    color: #ffffff;     
+    color: #ffffff; 
+    position: relative;    
 }
 
 .discount__text {
-    margin: 0 auto;
+    margin: 0 auto;    
 
     width: 280px;    
-    border-bottom: 1px solid #484848;  
+    border-bottom: 1px solid #484848;      
 }
 
 .discount__time {
     margin: 0;
     padding: 0;
     padding-bottom: 15px;
+    padding-left: 110px;
 
     font-size: 20px;
-    line-height: 27px;    
+    line-height: 27px;  
+    
+    &::before {
+        content: "";
+
+        background-image: url(../img/clock-mobile.svg);
+        background-repeat: no-repeat;
+
+        display: block;
+        width: 58px;
+        height: 57px;
+
+        position: absolute;
+        left: 40px;
+        top: 12px;
+    }
 }
 
 @media (min-width:$tablet) {
+    .discount {
+        padding-bottom: 0;
+        padding-bottom: 56px;
+    }
+
     .discount__text { 
-        padding-top: 30px;
-        padding-bottom: 30px;       
+        padding-top: 40px;
+        padding-bottom: 40px;       
 
         width: 640px;
 
@@ -37,14 +59,30 @@
     .discount__time {
         padding: 0;
         padding-left: 180px;
+
+        font-size: 30px;
+
+        &::before {
+            background-image: url(../img/clock-tablet.svg);
+            width: 72px;
+            height: 71px;
+            top: 30px;
+            left: 30px;
+        }
     }
 }
 
 @media (min-width:$desktop) {
     .discount {
         padding:  0;  
+        padding-left: 65px;
+        padding-right: 63px;
+        padding-bottom: 20px;
         
         border: 1px solid #484848;
+        width: 270px;     
+        box-sizing: border-box; 
+        display: flex; 
     }
 
     .discount__text {
@@ -54,11 +92,23 @@
 
         text-transform: none;    
         font-weight: 400;   
-        border: none; 
+        border: none;   
+        align-self: flex-end;     
     }
 
     .discount__time {
-        padding: 0;          
+        padding: 0;        
+        font-size: 20px;
+
+        text-align: center;
+
+        &::before {
+            background-image: url(../img/clock-desktop.svg);
+            width: 142px;
+            height: 139px;
+            top: 35px;
+            left: 65px;
+        }
     }
 }
 

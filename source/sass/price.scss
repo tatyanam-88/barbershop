@@ -24,10 +24,6 @@
    border-bottom: 1px solid #484848;
 }
 
-.price__row {
-    vertical-align: top;
-}
-
 .price__number {
     display: none;
 }
@@ -66,6 +62,9 @@
     }
 
     .price__title {
+        margin-bottom: 50px;
+        
+        font-size: 40px;
         text-align: left;
     }   
 
@@ -115,7 +114,6 @@
     }
 
     .price__cost {
-
         padding-left: 20px;
         padding-top: 20px;
         padding-bottom: 20px; 
@@ -126,13 +124,9 @@
 }
 
 @media (min-width:$desktop) {
-    .price,
-    .price__title {
-        width: 960px;
-    }
-
-    .price {
+    .price  {
         padding: 0;
+        margin: 0;        
     }
 
     .price__title {
@@ -144,5 +138,23 @@
         line-height: 30px;
         text-transform: uppercase;
         color: #ffffff;
+    }
+
+    .price__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+    }
+
+    .price__list {
+        width: 640px;
+    }
+
+    .price__number,
+    .price__service,
+    .price__wash,
+    .price__cost {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
