@@ -1,6 +1,6 @@
 .social {      
-    border-top: 2px solid #3e3e3e;
-    border-bottom: 2px solid #3e3e3e;
+    border-top: 1px solid #3e3e3e;
+    border-bottom: 1px solid #3e3e3e;
 }
 
 .social__wrapper {
@@ -27,7 +27,7 @@
     
 
     &:not(:last-child) {
-        border-right: 2px solid #3e3e3e;
+        border-right: 1px solid #3e3e3e;
     }   
 }
 
@@ -65,7 +65,7 @@
     .social__wrapper {
         width: 640px;
 
-        border: 2px solid #3e3e3e;
+        border: 1px solid #3e3e3e;
     }    
 
     .social__item {

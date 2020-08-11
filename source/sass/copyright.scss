@@ -23,14 +23,14 @@
     line-height: 24px;
     font-weight: 700;
 
-    border: 2px solid #3e3e3e;
+    border: 1px solid #3e3e3e;
 
     display: inline-block;
 }
 
 @media (min-width:$tablet) {
     .copyright {
-       margin-top: -245px;  
+       margin-top: -285px;  
        margin-left: 470px;  
        margin-bottom: 180px;    
     }

@@ -1,0 +1,21 @@
+.slider__toggle {
+    padding: 0;
+    margin-right: 23px;
+    border: none;
+
+    width: 10px; 
+    height: 10px;
+    background-color: #ffffff;
+    transform: rotate(45deg);   
+    
+    &:nth-child(2) {
+        background-color: transparent;
+        border: 1px solid #959595;
+    }
+
+    &:last-child {
+        margin-right: 0;
+        background-color: transparent;
+        border: 1px solid #959595;
+    }
+}

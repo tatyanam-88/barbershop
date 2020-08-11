@@ -1,31 +1,113 @@
-.user-list {
-    background-color: #6a4d38;
-    margin: 0;
-    height: 313px;
-}
+.user-list__login {
+    position: relative;
 
-.user-list__item {
-    padding-left: 40px;
-    padding-top: 20px;
-}
+    display: block;
+    padding: 17px 21px;
+    padding-left: 49px;
 
-.user-list__item a {
-    text-decoration: none;
+    line-height: 18px;
     color: #ffffff;
-    font-size: 18px;
-    line-height: 24px;
+    text-decoration: none;
+}
+
+.user-list__login-icon {
+    position: absolute;
+    top: 17px;
+    left: 21px;
+
+    width: 16px;
+    height: 16px;
+
+    opacity: 0.3;
+
+    polygon {
+        fill: #ffffff;
+    }
 }
 
 @media (min-width: $tablet) {
     .user-list {
-        width: 60px;
-        background-color: transparent;
-        height: auto;
+        width: 60px;        
     }    
+
+    .user-list__login {
+        width: 60px;
+        height: 70px;
+        padding: 0;
+    
+        font-size: 0;
+
+        &:hover .user-list__login-icon {
+            opacity: 1;
+      
+            polygon {
+              fill: #826550;
+            }
+          }
+      
+        &:active .user-list__login-icon {
+            opacity: 0.3;
+      
+            polygon {
+              fill: #ffffff;
+            }
+        }
+    }
+
+    .user-list__login-icon {
+        top: 29px;
+        left: 12px;
+      }
 }
 
 @media (min-width: $desktop) {
     .user-list {
-        width: 160px;
+        width: auto;
+        max-width: 160px;
     }
+
+    .user-list__login {
+        position: relative;
+    
+        width: auto;
+        height: auto;
+        padding-top: 25px;
+        padding-right: 30px;
+        padding-bottom: 23px;
+        padding-left: 50px;
+    
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    
+        &:hover {
+          color: #000000;
+    
+          background-color: #ffffff;
+        }
+    
+        &:active {
+          color: rgba(0, 0, 0, 0.3);
+    
+          background-color: #ffffff;
+        }
+    
+        &:hover .user-list__login-icon {
+          opacity: 0.3;
+    
+          polygon {
+            fill: #000000;
+          }
+        }
+    
+        &:active .user-list__login-icon {
+          opacity: 0.1;
+        }
+      }
+    
+      .user-list__login-icon {
+        left: 15px;
+      }    
 }

@@ -1,7 +1,12 @@
 .page-footer {
     background-color: #292929;
     color: #ffffff;
-    text-align: center;     
+    text-align: center;    
+    border-top: 1px solid #3e3e3e; 
+}
+
+.page-footer__cont {
+    border-top: none;
 }
 
 .page-footer__wrapper {
@@ -13,17 +18,27 @@
     margin-bottom: 30px;
 }
 
-@media (min-width:$tablet) {    
+@media (min-width:$tablet) {  
+    .page-footer {
+        border-top: none;
+    }  
+
+    .page-footer__container {
+        margin-top: 50px;      
+    }
+
     .page-footer__wrapper {
         width: 640px;
+        margin-bottom: 50px;
 
         text-align: left;              
-    }      
+    }       
 }
 
 @media (min-width:$desktop) {  
     .page-footer__container {
         margin: 0 auto;
+        margin-top: 40px;
         display: flex;
         width: 960px;   
         justify-content: space-between;     

@@ -4,7 +4,7 @@
     padding-left: 88px;
     padding-right: 88px;
 
-    border: 2px solid #e5ddd5;
+    border: 1px solid #e5ddd5;
     color: #000000;
     font-weight: bold;
     text-transform: uppercase; 
@@ -16,8 +16,23 @@
         padding-right: 28px;
 
         &.reviews__write {
-        padding-left: 0;
-        padding-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &.works__link {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &.page-main__major {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &.record__submit {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }
