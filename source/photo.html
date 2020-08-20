@@ -12,8 +12,12 @@
 <body>
     <header class="page-header">
         <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
-                alt="Барбершоп Бородинский">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
+                    alt="Барбершоп Бородинский">
+            </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -52,83 +56,101 @@
         </nav>
     </header>
 
-    <main class="page-main">
-        <div class="page-main__wrapper">
+    <main class="page-main page-main--inner">
+        <div class="page-main__contain">
+            <header class="page-title">
+                <h1 class="page-title__title">Наши работы</h1>
+                <a class="button" href="index.html">На главную</a>
+            </header>
+        </div>
+        
+        <div class="page-main__content">
             <section class="works">
-                <h1 class="works__title">Наши работы</h1>
-                <a class="works__link button" href="index.html">На главную</a>
-                <ul class="works__list">
-                    <li class="works__item">
-                        <div class="works__container">
-                            <img class="works__photo" src="img/photo-1-mobile.jpg" width="280" height="480"
-                                alt="Фото Лжепётра Мчиславского, сделавшего стрижку волос, бритьё бороды и усов">
-                            <img class="works__photo--tablet" src="img/photo-1-tablet.jpg" width="270" height="480"
-                                alt="Фото Лжепётра Мчиславского, сделавшего стрижку волос, бритьё бороды и усов">
-                            <img class="works__photo--desktop" src="img/photo-1-desktop.jpg" width="480" height="480"
-                                alt="Фото Лжепётра Мчиславского, сделавшего стрижку волос, бритьё бороды и усов">
-                            <span class="works__fact">Работа месяца</span>
-                        </div>
-                        <div class="works__info">
-                            <span class="works__fact">
-                                <span class="works__text">Работа месяца</span>
-                            </span>
-                            <h2 class="works__clientname">Лжепётр Мчиславский</h2>
-                            <p class="works__clientreview">Где я только не стригся, но так как делаете это вы - не умеет
-                                никто другой! Еще раз спасибо и до скорого!</p>
-                            <span class="works__service works__service--scissors">Стрижка</span>
-                            <span class="works__service works__service--beard">Бритье</span>
-                            <span class="works__service works__service--mustache">Усы</span>
-                        </div>
-                    </li>
-                    <li class="works__item">
-                        <div class="works__container">
-                            <img class="works__photo" src="img/photo-2-mobile.jpg" width="280" height="176"
-                                alt="Фото Саши Мальцева, сделавшего стрижку волос">
-                            <img class="works__photo--tablet" src="img/photo-2-tablet.jpg" width="270" height="293"
-                                alt="Фото Саши Мальцева, сделавшего стрижку волос">
-                            <img class="works__photo--desktop" src="img/photo-2-desktop.jpg" width="294" height="294"
-                                alt="Фото Саши Мальцева, сделавшего стрижку волос">
-                        </div>
-                        <div class="works__info">
-                            <h2 class="works__clientname">Саша Мальцев</h2>
-                            <p class="works__clientreview">Попросил омолодить и омолодили! Кто теперь скажет, что мне
-                                45?</p>
-                            <span class="works__service works__service--scissors">Стрижка</span>
-                        </div>
-                    </li>
-                    <li class="works__item">
-                        <div class="works__container">
-                            <img class="works__photo" src="img/photo-3-mobile.jpg" width="280" height="176"
-                                alt="Фото Владимира Иваныча, сделавшего бритьё бороды и усов">
-                            <img class="works__photo--tablet" src="img/photo-3-tablet.jpg" width="270" height="294"
-                                alt="Фото Владимира Иваныча, сделавшего бритьё бороды и усов">
-                            <img class="works__photo--desktop" src="img/photo-3-desktop.jpg" width="294" height="294"
-                                alt="Фото Владимира Иваныча, сделавшего бритьё бороды и усов">
-                        </div>
-                        <div class="works__info">
-                            <h2 class="works__clientname">Владимир Иваныч</h2>
-                            <p class="works__clientreview">К зимнему сезону - готов!</p>
-                            <span class="works__service works__service--beard">Борода</span>
-                            <span class="works__service works__service--mustache">Усы</span>
-                        </div>
-                    </li>
-                    <li class="works__item">
-                        <div class="works__container">
-                            <img class="works__photo" src="img/photo-4-mobile.jpg" width="280" height="176"
-                                alt="Фото Винстона Синего, сделавшего стрижку волос">
-                            <img class="works__photo--tablet" src="img/photo-4-tablet.jpg" width="270" height="294"
-                                alt="Фото Винстона Синего, сделавшего стрижку волос">
-                            <img class="works__photo--desktop" src="img/photo-4-desktop.jpg" width="294" height="294"
-                                alt="Фото Винстона Синего, сделавшего стрижку волос">
-                        </div>
-                        <div class="works__info">
-                            <h2 class="works__clientname">Винстон Синий</h2>
-                            <p class="works__clientreview">Как только заростаю и волосы начинают мешать видеть - бегом в
-                                Бородинский!?</p>
-                            <span class="works__service works__service--scissors">Стрижка</span>
-                        </div>
-                    </li>
-                </ul>
+                <article class="works-item works-item--work-of-month">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                            <source media="(min-width:768px)"
+                                srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-1-mobile.jpg"
+                                srcset="img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class="works-item__title">Лжепётр Мчиславский</h2>
+                        <blockquote class="works-item__text">Где я только не стригся, но так как делаете это вы — не
+                            умеет
+                            никто другой! Ещё раз спасибо и до скорого!</blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                            <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритьё</li>
+                            <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-2-mobile.jpg"
+                                srcset="img/photo-2-mobile@2x.jpg 2x" alt="Пример нашей работы">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class="works-item__title">Саша Мальцев</h2>
+                        <blockquote class="works-item__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне
+                            45?
+                        </blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-3-mobile.jpg"
+                                srcset="img/photo-3-mobile@2x.jpg 2x" alt="Пример нашей работы">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class="works-item__title">Владимир Иваныч</h2>
+                        <blockquote class="works-item__text">К зимнему сезону — готов!</blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритьё</li>
+                            <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-4-mobile.jpg"
+                                srcset="img/photo-4-mobile@2x.jpg 2x" alt="Пример нашей работы">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class="works-item__title">Винстон Синий</h2>
+                        <blockquote class="works-item__text">Как только заростаю и волосы начинают мешать видеть — бегом
+                            в
+                            Бородинский!</blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                        </ul>
+                    </div>
+                </article>
             </section>
         </div>
 

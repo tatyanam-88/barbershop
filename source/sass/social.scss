@@ -3,21 +3,17 @@
     border-bottom: 1px solid #3e3e3e;
 }
 
-.social__wrapper {
-    margin: 0 auto;
-    width: 280px;
-}
-
 .social__title {
     display: none;
 }
 
 .social__list {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;     
 
     list-style: none;
     display: flex;
+    width: 280px;
 }
 
 .social__item {
@@ -25,6 +21,9 @@
     padding-right: 40px;
     padding-top: 30px;
     
+    &:nth-child(1) {
+        padding-left: 25px;
+    }
 
     &:not(:last-child) {
         border-right: 1px solid #3e3e3e;
@@ -63,6 +62,7 @@
     }
 
     .social__wrapper {
+        margin: 0 auto;
         width: 640px;
 
         border: 1px solid #3e3e3e;
@@ -73,14 +73,21 @@
         padding-top: 35px;
         
         width: 214px;
+
+        &:nth-child(1) {
+            padding-left: 0;
+        }
+    }
+
+    .social__list {
+        width: 640px;
     }
 
     .social__link {
         margin: 0 auto;
 
         text-align: center;
-    }
-    
+    }    
 }
 
 @media (min-width:$desktop) {   
@@ -105,6 +112,8 @@
 
     .social__list {
         justify-content: center;
+
+        width: 280px;
     }
 
     .social__item {
@@ -113,6 +122,10 @@
         border: 2px solid #3e3e3e;
         width: 20px;
         height: 20px;
+
+        &:nth-child(1) {
+            padding-left: 15px;
+        }
     }
 
     .social__link--vkontakte {
