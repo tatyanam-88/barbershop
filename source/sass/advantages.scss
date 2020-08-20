@@ -6,7 +6,7 @@
     &::after {
         content: "";
         width: 100%;
-        height: 34px;
+        height: 40px;
         display: block;
 
         background-image: url(../img/triangle.png);
@@ -32,6 +32,8 @@
 .advantages__list {
     margin: 0;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 
     list-style: none;
     color: #f7f4f1;
@@ -79,7 +81,8 @@
 
 @media (min-width: $tablet) {
     .advantages {
-        margin: 0;       
+        margin: 0;
+        padding-top: 20px;       
 
         background-color: #353535;
     }

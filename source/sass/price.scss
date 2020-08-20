@@ -1,7 +1,5 @@
 .price {
-    padding-top: 30px;    
-
-    background-color: #353535;
+    padding-top: 30px;   
     color: #ffffff;   
 }
 
@@ -39,6 +37,7 @@
 .price__cost {
     padding: 0;
     text-align: right;
+    vertical-align: top;
 }
 
 .price__service {
@@ -125,13 +124,14 @@
 
 @media (min-width:$desktop) {
     .price  {
-        padding: 0;
-        margin: 0;        
+        padding: 0;       
+        margin: 0 auto;
+        width: 960px;        
     }
 
     .price__title {
         margin: 0 auto;
-        margin-top: 60px;
+        padding-top: 60px;
         margin-bottom: 30px;
 
         font-size: 30px;

@@ -1,15 +1,45 @@
 
-.page-main::after {
-    content: "";
+.page-main__wrap {
+    background-color: #242424;
+}
 
-    width: 100%;
-    height: 34px;
-    display: block;
+.page-main--inner {
+    color: #000000;
+    background-color: #353535;
 
-    background-image: url(../img/triangle-black.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    background-color: #353535; 
+    &::after {
+        content: "";
+
+        width: 100%;
+        height: 40px;
+        display: block;
+        background-image: url(../img/triangle-black.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.page-main__contain {
+    background-color: #f8f5f2;
+}
+
+.page-main__content {
+    background-color: #f8f5f2;
+    
+     &::after {
+        content: "";
+
+        width: 100%;
+        height: 40px;
+        display: block;
+        background-image: url(../img/triangle-gray.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.page-main__cont {
+    background-color: #353535;
 }
 
 .page-main__mod::after {
@@ -19,23 +49,18 @@
 .page-main__wrapper {     
     padding-top: 5px;    
     
-    background-color: #f8f5f2;
-
-    &::after {
-        content: "";
-
-        width: 100%;
-        height: 34px;
-        display: block;
-
-        background-image: url(../img/triangle-gray.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;        
-    }
+    background-color: #f8f5f2;    
 }
 
 .page-main__wrapper--mod::after {
-    display: none;
+    content: "";
+
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-image: url(../img/triangle-black.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .page-main__container {
@@ -62,25 +87,37 @@
 
 @media (min-width: $tablet) {
     .page-main {
-        margin: 0;
-        background-color: #353535;      
-        
-        &::after {
-            display: none;
-        }
+        margin: 0;              
+    }
+
+    .page-main--inner {
+        margin-bottom: 0;
+    }
+
+    .page-main__wrap {
+        background-color: #353535;
     }
 
     .page-main__wrapper {
         padding-top: 40px;
     }
 
+    .page-main__wrapper--mod::after {
+        display: none;
+    }
+
     .page-main__container {
         width: 640px;
+    }
+
+    .page-main__cont {
+        background-color: #353535;
     }
 
     .page-main__title {
         margin-bottom: 75px;
         text-align: left;
+        font-size: 40px;
     }
 
     .page-main__major {
@@ -105,17 +142,16 @@
             display: none;
         }
     }   
-
+    
     .page-main__container {
         margin: 0 auto;
 
         width: 960px;
     }
 
-    .page-main__cont {
-        margin: 0 auto;
+    .page-main__cont {       
         padding-bottom: 80px;
-
-        width: 960px;        
+        
+        background-color: #353535;      
     }
 }

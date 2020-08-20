@@ -3,8 +3,7 @@
     padding-bottom: 15px;        
 
     background-color: #353535;
-    color: #ffffff; 
-    position: relative;    
+    color: #ffffff;         
 }
 
 .discount__text {
@@ -21,7 +20,8 @@
     padding-left: 110px;
 
     font-size: 20px;
-    line-height: 27px;  
+    line-height: 27px; 
+    position: relative; 
     
     &::before {
         content: "";
@@ -34,8 +34,8 @@
         height: 57px;
 
         position: absolute;
-        left: 40px;
-        top: 12px;
+        left: 20px;
+        top: 0;
     }
 }
 
@@ -66,7 +66,7 @@
             background-image: url(../img/clock-tablet.svg);
             width: 72px;
             height: 71px;
-            top: 30px;
+            top: -20px;
             left: 30px;
         }
     }
@@ -106,8 +106,8 @@
             background-image: url(../img/clock-desktop.svg);
             width: 142px;
             height: 139px;
-            top: 35px;
-            left: 65px;
+            top: -160px;
+            left: 0;
         }
     }
 }
