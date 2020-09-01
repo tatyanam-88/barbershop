@@ -38,6 +38,16 @@
       width: 100px;
       text-align: left;
       text-decoration: none;
+
+      &:hover {
+        border: 1px solid #d5c9bd;
+    }
+
+    &:active {
+        border: none;
+        background-color: #d5c9bd;
+        color: #958c84;
+    }
     }
   }
 

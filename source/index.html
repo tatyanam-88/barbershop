@@ -41,7 +41,7 @@
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
-                        <a class="user-list__login" href="login.html">
+                        <a class="user-list__login" href="#">
                             Войти
                             <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 16 16">
@@ -252,6 +252,41 @@
             </div>
         </div>
     </footer>
+
+    <section class="modal-login">
+        <div class="modal-login__wrapper">
+            <h1 class="modal-login__title">Личный кабинет</h1>
+            <p class="modal-login__text">Введите свой логин и пароль, чтобы войти</p>
+    
+            <form class="modal-login__form" method="POST">
+                <div class="modal-login__inner">
+                    <label class="modal-login__user" for="mail">
+                        <input class="modal-login__field" type="email" name="mail" placeholder="Логин">
+                    </label>
+    
+                    <label class="modal-login__pass" for="pass">
+                        <input class="modal-login__field" type="password" name="pass" placeholder="Пароль">
+                    </label>
+                </div>
+    
+                <div class="modal-login__checkbox">
+                    <label class="modal-login__label" for="toggle">
+                        Запомните меня
+                        <input class="modal-login__toggle visually-hidden" type="checkbox" name="toggle" id="toggle">                    
+                        <span class="modal-login__checkbox--indicator"></span>
+                    </label>
+                    <a class="modal-login__recover" href="#">Я забыл пароль!</a>
+                </div>
+    
+                <div class="modal-login__button">
+                    <button class="modal-login__enter" type="submit">Войти</button>
+                    <button class="modal-login__close" type="button">Закрыть</button>                    
+                </div>
+                <button class="modal-login__enter modal-login__enter--mod" type="submit">Войти в личный кабинет</button>                             
+            </form>
+            <span class="modal-close"></span> 
+        </div>        
+    </section>
 
     <script src="js/script.js"></script>
 </body>

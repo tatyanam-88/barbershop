@@ -7,12 +7,17 @@
     border-top: 1px solid #3e3e3e;     
 }
 
-.page-footer__cont {
-    border-top: none;
+.page-footer__container {
+    padding-top: 39px;
+}
+
+.page-footer__container--mod {
+    padding-top: 0;
 }
 
 .page-footer__cont--mod {
     padding-top: 40px;
+    border-top: none;
 }
 
 .page-footer__wrapper {
@@ -31,6 +36,10 @@
     
     .page-footer__container {
         padding-top: 30px;
+    }
+
+    .page-footer__container--mod {
+        padding-top: 0;
     }
 
     .page-footer__wrapper {

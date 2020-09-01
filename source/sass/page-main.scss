@@ -5,10 +5,10 @@
 
 .page-main--inner {
     color: #000000;
-    background-color: #353535;
+    background-color: #353535;    
 
     &::after {
-        content: "";
+        content: "";       
 
         width: 100%;
         height: 40px;
@@ -35,6 +35,7 @@
         background-image: url(../img/triangle-gray.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        opacity: 0.91;
     }
 }
 
@@ -92,6 +93,15 @@
 
     .page-main--inner {
         margin-bottom: 0;
+        margin-top: -191px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-main__mod {
+        margin-top: -191px;
+        position: relative;
+        z-index: 1;
     }
 
     .page-main__wrap {
@@ -120,8 +130,7 @@
         font-size: 40px;
     }
 
-    .page-main__major {
-        
+    .page-main__major {        
         margin-top: -105px;
         margin-bottom: 35px;
         margin-left: auto;
@@ -131,12 +140,27 @@
         text-align: center;
 
         width: 160px;
+
+        &:hover {
+            border: 1px solid #d5c9bd;
+        }
+    
+        &:active {
+            border: none;
+            background-color: #d5c9bd;
+            color: #958c84;
+        }
     }
 }
 
 @media (min-width: $desktop)  {
+    .page-main--inner,
+    .page-main__mod {
+        margin-top: -300px;
+    }
+    
     .page-main__wrapper{
-        padding-bottom: 80px;
+        padding-bottom: 0;
 
         &::after {
             display: none;

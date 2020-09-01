@@ -1,6 +1,6 @@
 .reviews {
     background-color: #f8f5f2;
-    padding-top: 20px;
+    padding-top: 25px;   
 
     &::after {
         content: "";
@@ -57,7 +57,7 @@
 
     width: 50px;
     height: 50px;    
-    border: 2px solid #eae4dd;
+    border: 1px solid #eae4dd;
 }
 
 .reviews__author-image {
@@ -139,6 +139,16 @@
         position: absolute;
         top: -10px;
         right: 0;
+
+        &:hover {
+            border: 1px solid #d5c9bd;
+        }
+    
+        &:active {
+            border: none;
+            background-color: #d5c9bd;
+            color: #958c84;
+        }
     }
 
     .reviews__list {       
@@ -214,8 +224,7 @@
             margin: 0 auto;
             margin-top: -20px;
 
-            text-align: center;
-            
+            text-align: center;            
         }
     }
 } 

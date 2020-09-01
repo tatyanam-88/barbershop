@@ -11,7 +11,7 @@
 
 <body>
     <header class="page-header">
-        <a class="page-header__logo">
+        <a class="page-header__logo page-header__logo--mod">
             <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -41,7 +41,7 @@
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
-                        <a class="user-list__login" href="login.html">
+                        <a class="user-list__login" href="#">
                             Войти
                             <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 16 16">
@@ -86,9 +86,9 @@
                         <legend class="record__title">Выберите модель бороды:</legend>
                         <ul class="record__list record__list--choice">
                             <li class="record__item record__item--choice">
-                                <label class="record__label" for="admiral">
+                                <label class="record__label">
+                                    <input class="record__radio visually-hidden" type="radio" name="radio-name" checked>
                                     адмирал
-                                    <input class="record__radio visually-hidden" type="radio" id="admiral" checked>
                                     <span class="record__radio--indicator"></span>
                                 </label>
                                 <svg class="record__image" xmlns="http://www.w3.org/2000/svg" width="51.5" height="49.5"
@@ -99,9 +99,9 @@
                                 </svg>
                             </li>
                             <li class="record__item record__item--choice">
-                                <label class="record__label" for="woodman">
+                                <label class="record__label">
+                                    <input class="record__radio visually-hidden" type="radio" name="radio-name">
                                     лесоруб
-                                    <input class="record__radio visually-hidden" type="radio" id="woodman">
                                     <span class="record__radio--indicator"></span>
                                 </label>
                                 <svg class="record__image" xmlns="http://www.w3.org/2000/svg" width="57.7" height="68.6"
@@ -112,10 +112,10 @@
                                 </svg>
                             </li>
                             <li class="record__item record__item--choice">
-
                                 <label class="record__label" for="polar">
+                                    <input class="record__radio visually-hidden" type="radio" id="polar"
+                                        name="radio-name">
                                     полярник
-                                    <input class="record__radio visually-hidden" type="radio" id="polar">
                                     <span class="record__radio--indicator"></span>
                                 </label>
                                 <svg class="record__image" xmlns="http://www.w3.org/2000/svg" width="62.4" height="78.5"
@@ -126,10 +126,10 @@
                                 </svg>
                             </li>
                             <li class="record__item record__item--choice">
-
                                 <label class="record__label" for="boyar">
+                                    <input class="record__radio visually-hidden" type="radio" id="boyar"
+                                        name="radio-name">
                                     боярин
-                                    <input class="record__radio visually-hidden" type="radio" id="boyar">
                                     <span class="record__radio--indicator"></span>
                                 </label>
                                 <svg class="record__image" xmlns="http://www.w3.org/2000/svg" width="57" height="97.7"
@@ -141,8 +141,9 @@
                             </li>
                             <li class="record__item record__item--choice">
                                 <label class="record__label" for="wiseman">
+                                    <input class="record__radio visually-hidden" type="radio" id="wiseman"
+                                        name="radio-name">
                                     мудрец
-                                    <input class="record__radio visually-hidden" type="radio" id="wiseman">
                                     <span class="record__radio--indicator"></span>
                                 </label>
                                 <svg class="record__image" xmlns="http://www.w3.org/2000/svg" width="44.7"
@@ -159,7 +160,6 @@
                         <legend class="record__title">Дополнительные услуги:</legend>
                         <ul class="record__list record__list--optional">
                             <li class="record__item record__item--optional">
-
                                 <label class="record__label record__label--nameservice" for="paint-beard">
                                     Подкрасить бороду
                                     <input class="record__checkbox visually-hidden" type="checkbox" id="paint-beard"
@@ -214,7 +214,7 @@
     </main>
 
     <footer class="page-footer page-footer__cont page-footer__cont--mod">
-        <div class="page-footer__container">
+        <div class="page-footer__container page-footer__container--mod">
             <div class="page-footer__wrapper">
                 <div class="page-footer__contacts contacts">
                     <p class="contacts__title">Барбершоп Бородинский</p>
@@ -256,6 +256,58 @@
             </div>
         </div>
     </footer>
+
+    <section class="modal-login">
+        <div class="modal-login__wrapper">
+            <h1 class="modal-login__title">Личный кабинет</h1>
+            <p class="modal-login__text">Введите свой логин и пароль, чтобы войти</p>
+
+            <form class="modal-login__form" method="POST">
+                <div class="modal-login__inner">
+                    <label class="modal-login__user" for="mail">
+                        <input class="modal-login__field" type="email" name="mail" placeholder="Логин">
+                    </label>
+
+                    <label class="modal-login__pass" for="pass">
+                        <input class="modal-login__field" type="password" name="pass" placeholder="Пароль">
+                    </label>
+                </div>
+
+                <div class="modal-login__checkbox">
+                    <label class="modal-login__label" for="toggle">
+                        Запомните меня
+                        <input class="modal-login__toggle visually-hidden" type="checkbox" name="toggle" id="toggle">
+                        <span class="modal-login__checkbox--indicator"></span>
+                    </label>
+                    <a class="modal-login__recover" href="#">Я забыл пароль!</a>
+                </div>
+
+                <div class="modal-login__button">
+                    <button class="modal-login__enter" type="submit">Войти</button>
+                    <button class="modal-login__close" type="button">Закрыть</button>
+                </div>
+                <button class="modal-login__enter modal-login__enter--mod" type="submit">Войти в личный кабинет</button>
+            </form>
+            <span class="modal-close"></span>
+        </div>
+    </section>
+
+    <section class="modal-requestfail">
+        <div class="modal-requestfail__wrapper">
+            <h1 class="modal-requestfail__title">Неудача</h1>
+            <p class="modal-requestfail__text">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
+            <button class="modal-requestfail__close" type="button">Ок</button>
+        </div>
+    </section>
+
+    <section class="modal-requestluck">
+        <div class="modal-requestluck__wrapper">
+            <h1 class="modal-requestluck__title">Это успех!</h1>
+            <p class="modal-requestluck__text">Ваша заявка отправлена.<br> Ожидайте, мы свяжемся с вами как только будет
+                минутка.</p>
+            <button class="modal-requestluck__close" type="button">Закрыть окно</button>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
