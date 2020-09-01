@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 60" width="50" height="60">
+	<defs>
+		<image width="50" height="60" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAA8CAYAAAAkNenBAAABOklEQVRoQ+2awQ3CMBAEnTcPKIVSKIEOqIVOKIUW6ACk8OcuIigIRxDvxjjWRvKH6DbemQAfNyGEi621rSVft8Z239paLbmF7f3uRa61GFGRgl7H7jsiIzLCJ6BXi88US5QRjB9/Wkb4TLFEGcH48adlhM8US5QRjB9/Wkb4TLFEGcH48adlhM8US5QRjB9/Wkb4TLFEGcH48adlhM8US5QRjB9/Wkb4TLFEGcH48adlhM8US5QRjB9/Wkb4TLFEGcH48afrOuZUzcGzvZk+2NryjWdJPNtTjn46qL+8iBfa2dpk2UL6Q/xE08kL2PIiYVikj/USXqZESx39Zwkv87piRYb3S7D0QT8m8luRf1oapY8UyWXpJ/qsInNYmkSfXQS1lEx/ziJTLMH0cxQZs+Sfv/3up/+FxCcfM86GZ+LpbAwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="news">
+		<use id="Vector Smart Object copy" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	</g>
+</svg>

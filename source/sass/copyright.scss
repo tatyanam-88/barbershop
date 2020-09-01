@@ -14,11 +14,12 @@
 .copyright__link {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 90px;
-    padding-right: 90px; 
+    padding-left: 87px;
+    padding-right: 87px; 
 
     color: #ffffff;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -26,11 +27,21 @@
     border: 1px solid #3e3e3e;
 
     display: inline-block;
+
+    &:hover {
+        border: 1px solid #515151;
+    }
+
+    &:active {
+        border: none;
+        background-color: #292929;
+        color: #676767;
+    }
 }
 
 @media (min-width:$tablet) {
     .copyright {
-       margin-top: -285px;  
+       margin-top: -275px;  
        margin-left: 470px;  
        margin-bottom: 180px;    
     }

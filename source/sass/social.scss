@@ -1,6 +1,50 @@
 .social {      
     border-top: 1px solid #3e3e3e;
     border-bottom: 1px solid #3e3e3e;
+
+    &:hover {
+        border-top: 1px solid #515151;
+        border-bottom: 1px solid #515151;
+
+        > .social__wrapper {
+            > .social__list {
+                > .social__item:not(:last-child) {
+                    border-right: 1px solid #515151;
+                }                
+            }
+        }
+    }
+
+    &:active {
+       border: none;
+       background-color: #292929;          
+       
+       > .social__wrapper {
+            > .social__list {
+                > .social__item:not(:last-child) {
+                    border: none;  
+                    > .social__link--vkontakte {
+                        opacity: 0.3;
+                    }  
+                    > .social__link--facebook {
+                        opacity: 0.3;
+                    }                   
+                    }
+                }                     
+            }
+        }    
+}
+
+.social {
+    &:active > .social__wrapper {
+        > .social__list {
+            > .social__item {
+                > .social__link--instagram {                    
+                    opacity: 0.3;                   
+                }
+            }
+        }
+    }
 }
 
 .social__title {
@@ -23,6 +67,7 @@
     
     &:nth-child(1) {
         padding-left: 25px;
+        padding-top: 35px;
     }
 
     &:not(:last-child) {
@@ -59,13 +104,21 @@
 @media (min-width:$tablet) {
     .social {
         border: none;
+
+        &:hover {
+            border: none;
+        }
+
+        &:active {
+            background-color: transparent;
+        }
     }
 
     .social__wrapper {
         margin: 0 auto;
-        width: 640px;
-
-        border: 1px solid #3e3e3e;
+        width: 640px; 
+        
+        border: none;
     }    
 
     .social__item {
@@ -81,6 +134,16 @@
 
     .social__list {
         width: 640px;
+        border: 1px solid #3e3e3e;
+
+        &:hover {
+            border: 1px solid #515151;
+        }
+
+        &:active {
+            border: none;
+            background-color: #292929;
+        }
     }
 
     .social__link {
@@ -91,6 +154,16 @@
 }
 
 @media (min-width:$desktop) {   
+
+    .social {
+        &:active > .social__wrapper {
+            > .social__list {
+                > .social__item {
+                    border: none; 
+                }
+            }
+        }
+    }
 
     .social__wrapper {      
         display: block;
@@ -111,20 +184,30 @@
     }
 
     .social__list {
+        border: none;
         justify-content: center;
 
         width: 280px;
+
+        &:hover {
+            border: none;
+        }
     }
 
     .social__item {
         margin-right: 10px;
         padding: 15px;
-        border: 2px solid #3e3e3e;
+        border: 1px solid #3e3e3e;
         width: 20px;
         height: 20px;
 
         &:nth-child(1) {
             padding-left: 15px;
+            padding-top: 15px;
+        }
+
+        &:hover {
+            border: 1px solid #515151;
         }
     }
 
@@ -143,7 +226,6 @@
     .social__link--instagram {          
         background-image: url(../img/ig-small.png);       
         width: 19px;
-        height: 19px;
-       
+        height: 19px;       
     }
 }

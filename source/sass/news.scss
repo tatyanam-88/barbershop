@@ -34,7 +34,38 @@
 }
 
 .news__item {
-    display: flex;    
+    display: flex;
+    
+    &:hover {
+        > .news__date {
+            background-color: #826550;
+
+            &::after {
+                border-top: 10px solid #826550;
+            }
+        }
+
+        > .news__text {
+            color: #826550;
+            text-decoration: underline;
+        }
+    }
+
+    &:active {
+        > .news__date {
+            background-color: #6a4d38;
+            color: #978374;
+
+            &::after {
+                border-top: 10px solid #6a4d38;
+            }
+        }
+
+        > .news__text {
+            color: #6a4d38;
+            text-decoration: underline;
+        } 
+    }
 }
 
 .news__item {
@@ -55,17 +86,35 @@
 
 .news__date {
     padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
     margin-right: 20px;    
-
-    background-color: #000000;
+   
     color: #ffffff;
+    background-color: #000000;
 
     font-size: 16px;
     line-height: 30px;   
     
     align-self: flex-start;
+    position: relative;
+
+    &::after {
+        content: "";
+
+        display: block;
+        width: 0;
+        height: 0;
+        
+        
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 10px solid #000000;
+
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
 }
 
 .news__day {
@@ -87,13 +136,23 @@
     margin-top: -10px;
 
     font-size: 18px;
-    line-height: 27px;   
+    line-height: 27px; 
 }
 
 .news__to-all {        
     text-decoration: none;   
     font-size: 18px;
-    line-height: 24px;     
+    line-height: 24px;    
+    
+    &:hover {
+        border: 1px solid #d5c9bd;
+    }
+
+    &:active {
+        border: none;
+        background-color: #d5c9bd;
+        color: #958c84;
+    }
 }
 
 @media (min-width:$tablet) {

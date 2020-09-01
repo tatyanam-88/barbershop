@@ -1,0 +1,54 @@
+.modal-requestluck {
+    padding-top: 59px;
+    padding-bottom: 47px;
+
+    width: 320px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%,0%);     
+    box-shadow: 5px 5px 50px 0 rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    display: none;
+}
+
+.modal-requestluck__wrapper {
+    margin: 0 auto;
+
+    width: 280px;
+    height: 211px;
+}
+
+.modal-requestluck__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-requestluck__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.modal-requestluck__close {
+    margin-left: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 180px;
+    border: none;
+    background-color: #826550;
+    
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
